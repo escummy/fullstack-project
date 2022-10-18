@@ -1,0 +1,49 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "module-resolver", "prettier", "import"],
+  "rules": {
+    "indent": ["error", 2],
+    "tabwidth": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "trailingComma": ["warn", "none"],
+    "prettier/prettier": "error",
+    "import/no-unresolved": [
+      "error",
+      {
+        "plugins": [
+          "module-resolver",
+          {
+            "alias": {
+              "@config": "./src/config",
+              "@controllers": "./src/controllers",
+              "@services": "./src/services",
+              "@models": "./src/models",
+              "@routes": "./src/routes",
+              "@pages": "./src/pages",
+              "@utils": "./src/utils",
+              "@middlewares": "./src/middlewares"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
