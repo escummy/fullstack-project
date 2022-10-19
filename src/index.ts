@@ -1,7 +1,7 @@
 import express from "express";
 
-// @ to specify any file inside routes folder
-// examples: @routes, @pages, @controller, @services, @config @utils
+// absolute paths: @routes, @pages, @controller, @services, @config @utils
+// eslint-disable-next-line import/no-unresolved
 import route from "@routes/route";
 
 const app = express();
@@ -10,4 +10,5 @@ app.get("/", (req, res) => {
 });
 app.use("/", route);
 
-app.listen(3000, () => console.log("Server running on port 3000"));
+// Avoiding console.log and using process.std.out instead
+app.listen(3000, () => process.stdout.write("Server running on port 3000"));
