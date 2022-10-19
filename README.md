@@ -1,4 +1,4 @@
-# Complete typescript setup using node, babel, eslint and prettier to avoid conflicts.
+# Typescript setup using node, express, eslint and babel
 
 <!-- ## Travis CI badges and github actions
 # Logo: Framework, tool, base of the project not all  -->
@@ -14,7 +14,7 @@
 
  <!-- [![Build Status](https://travis-ci.org/escummy/dillinger.svg?branch=master)](https://travis-ci.org/escummy/dillinger) <img alt="Github workflows" src="https://github.com/thmsgbrt/thmsgbrt/workflows/README%20build/badge.svg"/> <img alt="Contributor Covenant v2.1" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg"/> <img alt="License" src="https://img.shields.io/github/license/escummy/webpack-complete?style=flat-square&labelColor=343b41"/> -->
 
-> To use node, express and typescript, eslint and prettier are perfectly blended to use avoiding conflicts, babel is implemented after build in production, and absolute paths are setted to import/export between pages or folders.
+> To use node, express and typescript, eslint and prettier are perfectly blended to avoid conflicts, also babel is implemented after build in production including absolute paths setted to import/export between folders.
 
 <br>
 
